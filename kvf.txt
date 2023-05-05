@@ -1,0 +1,20 @@
+const { episode, setEpisode } = props;
+
+    const resetCharacters = () => {
+    setEpisode(null);
+    };
+
+
+<div> <h1>Episodios</h1>
+    <div>
+    <span className="back-home" onClick={resetCharacters}>
+        Volver a la home
+      </span>
+    </div>
+    <div className='episode-cointainer'>
+            {episode.map((character, index) => (
+          <div className="character-container" key={index}>
+            <div><h3>{episode.name}</h3>
+         </div>
+    
+    </div>
